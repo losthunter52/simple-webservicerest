@@ -12,4 +12,4 @@ while(True):
             }
     x = requests.post(url, json = leitura)
     print(x.text)
-    time.sleep(1)
+    time.sleep(10)

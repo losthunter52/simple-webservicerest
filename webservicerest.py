@@ -9,7 +9,8 @@ leituras = []
 
 @app.route('/leituras', methods=['GET'])
 def obtem_leituras():
-    return jsonify({'leituras': leituras})
+    aux = leituras[-10:-1]
+    return jsonify({'leituras': aux})
 
 @app.route('/leituras/data', methods=['POST'])
 def obtem_leituras_por_data():
